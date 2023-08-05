@@ -22,10 +22,10 @@ def get_filters():
     #greeting
     print(("\n"*3)+("Well, hello darling!\n"))
 
-    name = input("Welcome to the bikeshare information data application. What would you like me to call you?\n").title()
+    name = input("Welcome to the bikeshare information data application. \nWhat would you like me to call you?\n").title()
 
-    print("It's a pleasure, {}.  Don't you look gorgeous, good God!".format(name))
-    print("I suppose you want me to tell you about this bikeshare data? Let's get started.")
+    print("It's a pleasure, {}.  Don't you look gorgeous, good God!\n".format(name))
+    print("I suppose you want me to tell you about this bikeshare data? Let's get started.\n")
     
     #ask user input for city to select proper csv
     while True:
