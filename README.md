@@ -4,6 +4,13 @@
 
 # **Geneva's Bikeshare Python Project**
 
+## Installation
+You will need to have Python 3 and Anaconda installed to properly run this program. Make sure you have NumPy and Pandas installed as well. 
+
+### Initialization
+This program can be initialized by entering the filefolder through a terminal and entering:
+
+`python gsteelebike.py`
 ### Description
 This project takes csv files from 3 different cities and allows the user to navigate through a series of prompts to discover statistics about the bikeshare programs in those cities.
 
