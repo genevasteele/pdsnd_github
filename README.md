@@ -1,16 +1,37 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+**Aug  5, 2023**
 
-### Project Title
-Replace the Project Title
+# **Geneva's Bikeshare Python Project**
 
+## Installation
+You will need to have Python 3 and Anaconda installed to properly run this program. Make sure you have NumPy and Pandas installed as well. 
+
+### Initialization
+This program can be initialized by entering the filefolder through a terminal and entering:
+
+`python gsteelebike.py`
 ### Description
-Describe what your project is about and what it does
+This project takes csv files from 3 different cities and allows the user to navigate through a series of prompts to discover statistics about the bikeshare programs in those cities.
+
+The user selects:
+-The city
+-If they want to filter by month
+    -if so, then the month
+-If they want to filter by day
+    -if so, then the day
+
+    The project then offers to scroll through lines of raw data related to the user's selections. 
 
 ### Files used
-Include the files used
+gsteelebike.py
+
+_These files are not in the repository due to project specifications_
+chicago.csv
+washington.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+Udacity provided the idea for this project, as well as the raw data and a template to work from. Thanks, Udacity! 
+
