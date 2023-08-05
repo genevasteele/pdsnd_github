@@ -20,7 +20,12 @@ def get_filters():
     # get user input for day of week (all, monday, tuesday, ... sunday)
     
     #greeting
-    print(("\n"*3)+("Well, hello darling! Don't you look gorgeous, good God!\nI suppose you want me to tell you about this bikeshare data? Let's get started."))
+    print(("\n"*3)+("Well, hello darling!\n"))
+
+    name = input("Welcome to the bikeshare information data application. What would you like me to call you?\n").title()
+
+    print("It's a pleasure, {}.  Don't you look gorgeous, good God!".format(name))
+    print("I suppose you want me to tell you about this bikeshare data? Let's get started.")
     
     #ask user input for city to select proper csv
     while True:
