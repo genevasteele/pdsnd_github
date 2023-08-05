@@ -297,7 +297,15 @@ def station_stats(df):
 def user_stats(df):
     """Displays statistics on bikeshare users."""
     print('\nWho comprised our user base?\n')
-    # find age related info, handle errors
+   
+    print('In terms of who our users were in this period:\n')
+        # Display counts of user types
+        # find subscription level related info, handle errors
+    users = df.groupby(['User Type']).count()
+    ucounts = users['Start Time']
+    print(ucounts.to_string()+'\n')
+   
+       # find age related info, handle errors
     while True:
         try:
             start_time = time.time()
@@ -306,14 +314,8 @@ def user_stats(df):
             birthiest =  int(df['Birth Year'].mode())
             print("In this period:\nThe youngest user was born in: {}\nThe oldest user was born in: {}\nThe most users were born in: {}".format(youngest,oldest,birthiest))
         except: KeyError
+        print("\nSorry, we don't have any information about the birth dates of our users in this city.\n")
         break
-    print('In terms of who our users were in this period:\n')
-        # Display counts of user types
-        # find subscription level related info, handle errors
-    users = df.groupby(['User Type']).count()
-    ucounts = users['Start Time']
-    print(ucounts.to_string()+'\n')
-   
     # Display counts of gender
     # find gender related info, handle errors
     while True:
@@ -322,6 +324,7 @@ def user_stats(df):
                 counts = genders['Start Time']
                 print(counts.to_string()+'\n')
             except: KeyError
+            print("\nSorry, we don't have any information about the genders of our users in this city.\n")
             break
     
     print("\nThis took %s seconds." % (time.time() - start_time))
